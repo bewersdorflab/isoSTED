@@ -1,0 +1,37 @@
+Update History:
+
+Apr.06, 2015  v11.0
+	- Fix the scanning sync problem of z axis by updating the FPGA 7841R program.
+	- Add the frame counter function into the main program.
+	- Design a new logo for the main program.
+	- Update the format of head file to include more information.
+	- Enable the focus lock function.
+	- Enable the stage re-initialization function when the main program is running.
+	- Add the "follow cursor" imaging mode.
+	- Add the error handlers to deal with incorrect operation when loading the files.
+
+Feb.20, 2015 v10.0
+	- Resign the UI.
+	- Update the .vi files for SLM control to enable the setting saving function. 
+	- Update the .vi files for DM control to enable the setting saving function. Integrate the DM training loop into the dual-DM control .vi file.
+	- Update the .vi files for time delay control to enable the setting saving function. The new control files are also compatible with random number of connected delay boards.
+	- Resign the panel of P612 control.
+
+Jan.05, 2015 v9.0
+	- Resign the UI.
+	- Integrate the delay board control function into the main program.
+	- Add the systematic default colormap as an option for the colormap selection.
+	- Fix the bugs for ASI and N664 stage control.
+
+Nov.01, 2015 v8.0
+	- Enable the DM control (both sigle and dual DM control modes).
+
+Sep.30, 2015 v7.0
+	- Resign the UI.
+	- Update the control loopS for all stage control.
+	- Add the graph control panel and display control panel.
+
+Jul.25, 2015 v6.0
+	- The first fully-functional version. Add all missing control functions.
+
+v1.0~v5.0 are all early versions for specific function testing.
