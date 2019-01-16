@@ -1,0 +1,114 @@
+***************** Tue Dec  6 15:37:35 GMT 2016
+To correct specimen aberration use:
+runfile('C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python/sensorless.py', wdir='C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python')
+
+To correct DM aberration use:
+runfile('C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python/sensorless.py', wdir='C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python', args='--dm-ab-calib-rad 0.8')
+
+By default it uses 4pi modes. Use any combination of --z-noll-include,
+--z-noll-exclude --z-min, --z-max, --z-exclude-4pi-modes to control which
+Zernike modes are used. The program will print which Zernike indices and 4Pi
+modes are being used in the Spyder console. E.g.:
+
+Selected Noll indices for the Zernike modes are:
+[5 6 7 8]
+
+4pi_modes: all_4pi NOLL
+[5, -5, 6, -6, 7, -7, 8, -8]
+
+
+usage: sensorless.py [-h] [--algorithm {modal2,nelder-mead,modal}]
+                     [--host HOST] [--port PORT] [--debug] [--dump-files]
+                     [--repeat TIMES] [--printx] [--dm-ab-calib-rad RMS]
+                     [--dm-ab-um RMS] [--control NAME] [--cnt-no-dm0]
+                     [--cnt-no-dm1] [--cnt-no-zcomp]
+                     [--z-noll-include INDICES] [--z-noll-exclude INDICES]
+                     [--z-min MIN] [--z-max MAX] [--z-4pi-modes Z_4PI_MODES]
+                     [--z-exclude-4pi-modes INDICES] [--nm-disp]
+                     [--nm-maxiter ITERATIONS] [--nm-maxfev FEVAL]
+                     [--abs-thresh THRESH] [--rel-thresh THRESH]
+                     [--metric
+{metric_low_spatial_freq,metric_total_intensity,metric_ring,metric_sum_square,metric_convolve}]
+                     [--bias-rms BIAS] [--modal-max-amplitude AMPL]
+                     [--modal-steps STEPS] [--modal-no-correction]
+                     [--low-spatial-M1 M1] [--low-spatial-M2 M2]
+
+Run sensorless optimisation algorithms. Use `modal2` for the scan mode
+algorithm or `nelder-mead`, see the help for ALGORITHM.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --algorithm {modal2,nelder-mead,modal}
+                        Algorithm name (default: modal2)
+  --host HOST           Host name (default: localhost)
+  --port PORT           Port number (default: 8900)
+  --debug               Debug LabView-Python communication (default: False)
+  --dump-files          Save LabView-Python communication to disk (default:
+                        False)
+  --repeat TIMES        Run the correction algorithm more than once (BROKEN)
+                        (default: 1)
+  --printx              Print the variable under optimisation. (default:
+                        False)
+  --dm-ab-calib-rad RMS
+                        Add random DM aberration of RMS [rad] (calibration
+                        lambda) (default: 0.0)
+  --dm-ab-um RMS        Add random DM aberration of RMS [um] (default: 0.0)
+  --control NAME        Select a DM control (default: DualDMZernike)
+  --cnt-no-dm0          Disable DM0 (default: False)
+  --cnt-no-dm1          Disable DM1 (default: False)
+  --cnt-no-zcomp        Disable piston compensation stage (default: True)
+  --z-noll-include INDICES
+                        Comma separated list of Noll indices to include, e.g.,
+                        1,2,3,4,5,6. NB: DO NOT USE SPACES in the list!
+                        (default: None)
+  --z-noll-exclude INDICES
+                        Comma separated list of Noll indices to exclude, e.g.,
+                        1,5,6 to exclude piston and astigmatism. NB: DO NOT
+                        USE SPACES in the list! (default: None)
+  --z-min MIN           Minimum Noll index to consider, use -1 to ignore
+                        (default: 5)
+  --z-max MAX           Maximum Noll index to consider, use -1 to ignore
+                        (default: 8)
+  --z-4pi-modes Z_4PI_MODES
+                        Use 4Pi modes (default: True)
+  --z-exclude-4pi-modes INDICES
+                        Comma separated list of 4pi modes to ignore, e.g.,
+                        -1,2,3,4 to ignore contravariant piston and covariant
+                        tip/tilt/defocus. The sign denotes co/contra variant.
+                        The absolute value denotes a Noll index. NB: DO NOT
+                        USE SPACES in the list! (default: -1,2,3,4)
+  --nm-disp             Show progress for nelder-mead method (default: False)
+  --nm-maxiter ITERATIONS
+                        Maximum iterations for nelder-mead method (default:
+                        None)
+  --nm-maxfev FEVAL     Maximum measurements of nelder-mead method / stop
+                        condition (default: None)
+  --abs-thresh THRESH   Absolute threshold for background removal (default:
+                        -1.0)
+  --rel-thresh THRESH   Relative threshold for background removal (default:
+                        -1.0)
+  --metric
+{metric_low_spatial_freq,metric_total_intensity,metric_ring,metric_sum_square,metric_convolve}
+                        Name of the metric function (default:
+                        metric_low_spatial_freq)
+  --bias-rms BIAS       Magnitude of the bias for scanning aberration modes
+                        [calib rad] (default: 2.0)
+  --modal-max-amplitude AMPL
+                        Maximum amplitude allowed for the aberration
+                        correction [calib rad] (scan method) (default: 2.0)
+  --modal-steps STEPS   Number of steps for each iteration of the modal scan
+                        method (default: 4)
+  --modal-no-correction
+                        Do not apply the aberration correction (scan method).
+                        Useful to collect data only to evaluate different
+                        metrics afterwards. (default: False)
+  --low-spatial-M1 M1   Lower radius of low-spatial-frequencies metric [0, 1]
+                        (default: 0.2)
+  --low-spatial-M2 M2   Upper radius of low-spatial-frequencies metric [0, 1]
+                        (default: 0.6)
+
+
+****************** OLD code November 2016
+example of how to run using Spyder
+
+runfile('C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python/sensorless.py', wdir='C:/Users/ED STED/Documents/Test Control Software/Host VIs/DM_Dual_V2/Python', args='--zmin 11 --zmax 12 --nm-maxfev 80 --runs 1 --modes4pi --aberration-rms 0.0 --metric metric_low_spatial_freq modal')

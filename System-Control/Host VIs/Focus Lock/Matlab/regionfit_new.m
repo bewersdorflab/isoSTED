@@ -1,4 +1,4 @@
-function [cmx cmy sx sy]=regionfit(region)
+function [cmx cmy sx sy]=regionfit_new(region)
 
 % imsz=size(region,1);
 % xlin=1:1:imsz;

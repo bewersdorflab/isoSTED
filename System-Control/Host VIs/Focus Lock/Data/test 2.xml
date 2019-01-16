@@ -1,0 +1,60 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>14.0.1</Version>
+<Cluster>
+<Name></Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Cursor.Cursor X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Cursor.Cursor Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<Cluster>
+<Name>Lock Position</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>dx - dy</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>Lock Control  out</Name>
+<NumElts>6</NumElts>
+<Boolean>
+<Name>EXIT</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Lock Current</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Manual</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Drift</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Move</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Control Option</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+</Cluster>
+</LVData>
