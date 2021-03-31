@@ -20,10 +20,10 @@ Last update: Jan 13, 2019
 For any questions / comments about this software, please use the contact the Bewersdorf Lab at www.bewersdorflab.org.
 
 # Copyright and Software License
-Copyright (C) 2021 Bewersdorf Lab, Yale University
-Copyright (C) 2021 Xiang Hao
-Copyright (C) 2021 Edward Allgeyer
-Copyright (C) 2021 Jacopo Antonello
+Copyright (C) 2021 Bewersdorf Lab, Yale University  
+Copyright (C) 2021 Xiang Hao  
+Copyright (C) 2021 Edward Allgeyer  
+Copyright (C) 2021 Jacopo Antonello  
 Copyright (C) 2021 Jiaxi Zhao
 
 The package is licenced under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
