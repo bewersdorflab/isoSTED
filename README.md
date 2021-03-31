@@ -1,50 +1,27 @@
-# isoSTED
-isoSTED source code
+# isoSTED-Control and DM Training
+Beam scanning isoSTED microscope control and DM training software used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ. Last update: Jan 13, 2019
 
-INTRODUCTION
--------------------------------------------------------
-This project includes 2 unique packages: one for isoSTED system control and another for
-the deformable mirror training. Please refer each folder for the details.
+# Software Requirements
+* NI LabVIEW 2016, 64-bit
+* NI Device Drivers (DAQmx and VISA are required)
+* NI Vision Development Module
+* NI FPGA Module
 
-Programmed by XH, EA, JA, and JZ
-Last update: Jan 13, 2019
+# Hardware Requirements
+* NI PCIe 7852R FPGA DAQ card
+* NI PCIe 7841R FPGA DAQ card
+* EOPC 16 kHz resonance mirror
+* ScanLab dynAXIS XS galvanometer mirrors
+* BMC Multi-5.5 deformable mirror(s)
 
+# Contact
+For any questions / comments about this software, please use the contact the Bewersdorf Lab at www.bewersdorflab.org.
 
-***********************************************************************************
-
+# Copyright and Software License
 Copyright (C) 2021 Bewersdorf Lab, Yale University
 Copyright (C) 2021 Xiang Hao
 Copyright (C) 2021 Edward Allgeyer
 Copyright (C) 2021 Jacopo Antonello
 Copyright (C) 2021 Jiaxi Zhao
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
-
-1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in
-   the documentation and/or other materials provided with the
-   distribution.
-
-3. Neither the name of the copyright holder nor the names of its
-   contributors may be used to endorse or promote products derived
-   from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
-FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
-ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
-
-***********************************************************************************
+The package is licenced under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
