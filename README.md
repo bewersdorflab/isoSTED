@@ -1,5 +1,7 @@
 # isoSTED-Control and DM Training
-Beam scanning isoSTED microscope control and DM training software used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ. Last update: Jan 13, 2019
+Beam scanning isoSTED microscope control and DM training software used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ.
+
+Last update: Jan 13, 2019
 
 # Software Requirements
 * NI LabVIEW 2016, 64-bit
@@ -19,9 +21,13 @@ For any questions / comments about this software, please use the contact the Bew
 
 # Copyright and Software License
 Copyright (C) 2021 Bewersdorf Lab, Yale University
+
 Copyright (C) 2021 Xiang Hao
+
 Copyright (C) 2021 Edward Allgeyer
+
 Copyright (C) 2021 Jacopo Antonello
+
 Copyright (C) 2021 Jiaxi Zhao
 
 The package is licenced under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
