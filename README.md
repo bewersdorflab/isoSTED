@@ -1,5 +1,8 @@
-# isoSTED-Control and DM Training
-Beam scanning isoSTED microscope control and DM training software used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ.
+# isoSTED-Control
+Beam scanning isoSTED microscope control used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ.
+
+# DM Control and Training
+Please visit [aomicroscopy.org](https://aomicroscopy.org/) for all DM related control and training software and tutorials.
 
 Last update: Jan 13, 2019
 
