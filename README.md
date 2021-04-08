@@ -1,9 +1,6 @@
 # isoSTED-Control
 Beam scanning isoSTED microscope control used in the laboratory of Joerg Bewersdorf at Yale University. This software has been used for the collection of data found in [Hao et al. (2020)](https://doi.org/10.1101/2020.11.25.398958). Programmed by XH, EA, JA, and JZ.
 
-# DM Control and Training
-Please visit [aomicroscopy.org](https://aomicroscopy.org/) for all DM related control and training software and tutorials.
-
 Last update: Jan 13, 2019
 
 # Software Requirements
@@ -30,3 +27,6 @@ Copyright (C) 2021 Jacopo Antonello
 Copyright (C) 2021 Jiaxi Zhao
 
 The package is licenced under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
+# DM Control and Training
+Please visit [aomicroscopy.org](https://aomicroscopy.org/) for all DM related control and training software and tutorials.
